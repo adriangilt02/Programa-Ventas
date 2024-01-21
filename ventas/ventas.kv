@@ -200,7 +200,7 @@
 <VentasWindow>:
 	canvas.before:
 		Color:
-			rgba: hex('#24B0AE')
+			rgba: hex('#5BBAFA')
 		Rectangle:
 			size: self.size
 			pos: self.pos
@@ -258,15 +258,9 @@
 				spacing: .5
 				size_hint_y: .1
 				rows: 2
-				cols: 2
+				cols: 1
 				LabelOscuro:
-					text: 'Buscar por Código'
-				LabelOscuro:
-					text: 'Buscar por Nombre'
-				TextInput:
-					id: buscar_codigo
-					multiline: False
-					on_text_validate: root.agregar_producto_codigo(self.text)
+					text: 'Nombre del Producto'
 				TextInput:
 					id: buscar_nombre
 					multiline: False
@@ -287,9 +281,6 @@
 					LabelOscuro:
 						text: 'Cantidad'
 						size_hint_x: .1
-					LabelOscuro:
-						text: 'Precio por Artículo'
-						size_hint_x: .15
 					LabelOscuro:
 						text: 'Precio'
 						size_hint_x: .15
